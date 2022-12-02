@@ -15,6 +15,7 @@ const InfoTemplate = () => {
     { id: 4, firstName: 'Jessi', lastName: 'Glaser'},
     { id: 5, firstName: 'Jay', lastName: 'Bilzerian'}
 ]);
+
   return (
     <div>
       <Welcome />
@@ -27,7 +28,9 @@ const InfoTemplate = () => {
       <br /> <> or </>
       <GraphicOption />
       <br /> 
-      <> Members </>
+      <> Members     </> 
+      <button onClick={() =>  navigator.clipboard.writeText(window.location.href)}>
+        Invite </button>
       <fieldset>
         {users && users.map(user =>
           <li key={user.id}>
