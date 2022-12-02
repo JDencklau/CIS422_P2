@@ -15,6 +15,21 @@
   color: var(--white);
 }
 
+.accordion-title {
+  cursor: pointer;
+}
+
+.example {
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--blue);
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
 table {
   margin: auto;
   border-spacing: 0px;
@@ -137,7 +152,7 @@ button {
   height: auto;
   min-height: 800px;
   border-radius: 2rem;
-
+  padding-bottom: 2rem;
 }
 
 body {
